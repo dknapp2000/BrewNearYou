@@ -1,0 +1,208 @@
+*{
+	margin: 0;
+}
+
+body {
+background: rgba(241,231,103,1);
+background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(254,182,69,1)));
+background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 );
+--golden: #ffbf00;
+}
+
+html, body {
+	height: 100%;
+}
+
+.login-clean {
+    background-image: url('../../assets/images/beer-glasses.jpg');
+    background-size: cover;
+}
+
+.ion-ios-pint {
+    color: var(--golden);
+}
+
+#login-submit {
+    background: var(--golden);
+}
+
+a.navbar-brand{
+font-family: 'Lobster', cursive;
+font-size: 30px;
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   font-family: 'Roboto', sans-serif;
+}
+
+.navbar li, .dropdown-menu { 
+	color: #000; 
+	font-family: 'Roboto', sans-serif;
+} 
+
+#location-entry {
+	height: 48px;
+	width: 100%;
+}
+
+#lyftBtn, #uberBtn {
+	margin-top: 10px;
+	margin-right: 10px;
+	font-family: 'Roboto', sans-serif;
+    background-color: #ffd740;
+    border-style: none;
+}
+
+li.list-group-item{
+	font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+
+
+.googleMap {
+	margin-top: 10px;
+}
+
+.panel-transparent {
+    background: none;
+    border-style: none;
+}
+
+.panel-transparent .panel-heading{
+    background: rgba(122, 130, 136, 0.2)!important;
+}
+
+.panel-transparent .panel-body .list-group-item{
+  	background: rgba(46, 51, 56, 0.2)!important;
+    border-style: none;
+}
+
+#map {
+    height: 450px;
+}
+
+#content {
+    width: 200px;
+    height: 200px;
+}
+
+#firstHeading {
+    font-size: 15px;
+}
+
+.wrapper {
+    display: inline-block;
+    border-style: none;
+    width: 100%;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+#dropdown {
+    background: none;
+}
+
+.dropdown-toggle, #submitSearch {
+    background-color: #ffd740;
+    color: black;
+}
+
+.btn-group {
+    background: none;
+    border-style: none;
+    padding: 0;
+}
+
+.input-group-addon {
+    height: 35px;
+}
+
+h3 {
+    font-size: 14px;
+    margin: 0 14px;
+}
+
+p {
+    margin: 0 14px;
+}
+
+#location-entry {
+        height: 35px;
+        /*width: 100%;*/
+    }
+
+.footer {
+    position: absolute;
+    /*bottom: 0;*/
+    width: 100%;
+}
+
+.footer p {
+    font-size:14px;
+    display: inline-block;
+}
+
+.container {
+    max-width: 100%;
+    padding:0 50px;
+}
+
+#ftr-wrap {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#ftr-wrap > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ftr-links ul {
+    text-align: center;
+}
+
+.ftr-links ul li {
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.ftr-links ul li a {
+    color: #fff;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 420px){
+    .searchButton {
+        max-width: 300px;
+    }
+    #location-entry {
+        height: 35px;
+        /*width: 100%;*/
+    }
+
+    .wrapper {
+    display: inline-block;
+    border-style: none;
+    width: 100%;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+}

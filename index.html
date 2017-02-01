@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Brewnearyou</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+   <div class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Brew Near You</h4></div>
+                <div class="modal-body">
+                    <div class="login-clean login">
+                        <form method="post">
+                            <h2 class="sr-only">Login Form</h2>
+                            <div class="illustration"><i class="icon ion-ios-pint"></i></div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="boozer-name" placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-block" type="button" id="login-submit">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"> <i class="fa fa-beer" aria-hidden="true"></i> Brewnearyou </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li> <button class="btn btn-info" id="uberBtn" type="button"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Uber </button></li>
+                        <li> <button class="btn btn-info" id="lyftBtn" type="button"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Lyft </button></li>
+                        <!-- <li class="dropdown"><a class="dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-expanded="false" href="#">More <span class="caret"></span></a> -->
+                            <!-- <ul class="dropdown-menu" role="menu"> -->
+                                <!-- <li role="presentation" id="preferences"><a href="#">Preferences</a></li> -->
+                                <!-- <li role="presentation" id="savedSearches"><a href="#">Saved searches</a></li> -->
+                                <!-- <li role="presentation" id="uber"><a href="#">Uber</a></li> -->
+                            <!-- </ul> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="wrapper row">
+        <nav class="navbar navbar-default" id="search">
+            <div class="container-fluid">
+
+                <form accept-charset="utf-8" role="search" id="searchForm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <select class="input-group-addon selectpicker searchSelect dropup show-tick" id="searchDropdownBox" name="url" title="Search Options">
+                                <option value="beer">Beer</option>
+                                <option value="brewery">Brewery</option>
+                                <option value="zipcode">Zip Code</option>
+                            </select>
+
+                            <input type="text" value="" name="field-keywords" class="form-control" id="location-entry" placeholder="What are you looking for?">
+
+                            <a class="input-group-addon btn" id="submitSearch">
+                                <i class="fa fa-beer" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+        <div class="container googleMap">
+            <div class="row">
+                <div id="map" class="col-md-6">
+                    <iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBiRl0FehttRNGtx7QMuhNaoYFQeWLUwW0&amp;q=Charlotte%2C+NC&amp;zoom=11"></iframe>
+                </div>
+                <div class="panel panel-default panel-transparent col-md-6">
+                    <div class="panel-body">
+                        <ul id="search-results" class="list-group">
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div id="ftr-wrap">
+                    <div class="ftr-links">
+                        <ul>
+                            <li id="about"><p class="navbar-link"><span id="details"> About</span></p></li>
+                            <li><a class="navbar-link" href="mailto:brewnearyou@gmail.com"> Contact Us</a></li>
+                            <li><p class="text-muted">&copy;Copyright 2017 Brewnearyou</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+    <script src="https://use.fontawesome.com/b2bf409704.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjNRtRGuvjI3D8tNDuoLrnIRelt5_dA_o&callback=mapper.initMap"> </script>
+    <script src="assets/js/moment.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script async defer type="text/javascript" src="assets/js/login.don.js"></script>
+    <script src="assets/js/app.js"></script>
+   
+</body>
+
+</html>
